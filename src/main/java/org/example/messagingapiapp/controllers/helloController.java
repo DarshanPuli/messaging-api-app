@@ -1,4 +1,4 @@
-package controllers;
+package org.example.messagingapiapp.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class helloController {
 
-    @GetMapping("oracle")
+    @GetMapping("/oracle")
     public String printGreetings(){
         return "hi oracle!!";
     }
